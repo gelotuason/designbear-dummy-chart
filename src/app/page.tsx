@@ -113,8 +113,12 @@ const MovingLineChart = () => {
   }, [])
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-4 bg-white h-[400px]">
-      <Line data={chartData} options={options} />
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-3xl p-4 bg-white rounded-lg shadow-md">
+        <div className="h-[400px]">
+          <Line data={chartData} options={options} />
+        </div>
+      </div>
     </div>
   )
 }
